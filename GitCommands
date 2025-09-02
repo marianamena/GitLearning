@@ -1,0 +1,12 @@
+1.create repository :
+git init repositoryname
+
+2. git config :
+
+git config --global user.name "maryam"
+git config --global user.email "mariana88.tw@gmail.com"
+git config --global core.editor "/usr/bin/vim"
+
+to see all config of git:
+git config --list
+
