@@ -1,4 +1,5 @@
 1.create repository :
+
 git init repositoryname
 
 2. git config :
@@ -9,4 +10,17 @@ git config --global core.editor "/usr/bin/vim"
 
 to see all config of git:
 git config --list
+also you can see in cat  ~/.gitconfig
 
+3.git add :
+git add filename : this file will be tracked by git. this file is added to staging area.
+
+4.git status:
+you can see the status of files in git with : git status
+with this command ,at the first line ,we can see which branch we are in .
+with git status -s : you can see the state of files which are not added to staged area.
+
+example: mkdir src ,git add src,when we write git status ,the directory is not in staging area,becuase git dont care about empty directory.
+
+5. git rm :
+ git rm filename
