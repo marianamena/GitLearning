@@ -47,10 +47,7 @@ echo "build/*" >> .gitignore
 git commit -m "new directory is added to .gitignore file "
 
 
-
-
-
-
+9. git tag
 
 
 
