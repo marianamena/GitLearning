@@ -19,8 +19,54 @@ git add filename : this file will be tracked by git. this file is added to stagi
 you can see the status of files in git with : git status
 with this command ,at the first line ,we can see which branch we are in .
 with git status -s : you can see the state of files which are not added to staged area.
+?? means : the file is not in staged area,when it is added to stage area A will add at the start of the file.
 
 example: mkdir src ,git add src,when we write git status ,the directory is not in staging area,becuase git dont care about empty directory.
 
 5. git rm :
  git rm filename
+
+6. when you edit a file and then run git status:
+you need to run : git add filename again after changing the file.
+
+7. git commmit:
+
+when we write the git commit : it will list all files needed to be commit.(which are in staged area)
+this is th vim file ,you can write the comment then save and exit ,all files will be commites.
+
+git commit -a -m "all files are ok to be commited"
+
+8. git ignore file:
+mkdir build
+touch .gitignore
+git add .gitignore
+git commit -m ".gitignore file is added"
+
+after this, when we add file in .gitignore,nothing will be track:
+echo "build/*" >> .gitignore
+git commit -m "new directory is added to .gitignore file "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
